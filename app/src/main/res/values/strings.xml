@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">ChiaSeNhac</string>
+    <string name="share">Share</string>
+    <string name="open_with">Open with</string>
+    <string name="delete_file_successfull">Delete file successfull</string>
+    <string name="cant_delete_file">Can not delete this file !</string>
+    <string name="txt_file_not_found">File not found</string>
+    <string name="error">Error</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="ads_interestial">1111</string>
+    <string name="check_connection">Please check internet conection</string>
+    <string name="ads_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="top_chart">Chart</string>
+    <string name="feature_album">Feature album</string>
+    <string name="viet_nam">Viet Nam</string>
+    <string name="us">US - UK</string>
+    <string name="korean">Korea</string>
+    <string name="japan">Japan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="category">Category</string>
+    <string name="new_album">New Album</string>
+    <string name="new_song">New Song</string>
+    <string name="cate_romance">Romance</string>
+    <string name="cate_sleep">Sleep</string>
+    <string name="cate_gym">Gym</string>
+    <string name="cate_dance">Dance</string>
+    <string name="cate_work">Work</string>
+    <string name="cate_coffe">Coffe</string>
+    <string name="cate_game">Game</string>
+    <string name="cate_travel">Travel</string>
+    <string name="cate_newyear">New Year</string>
+    <string name="us_uk">Us Uk</string>
+    <string name="china">China</string>
+    <string name="france">France</string>
+    <string name="other">Other</string>
+    <string name="playback">Playback</string>
+    <string name="testing">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in auctor odio. Suspendisse elit elit, convallis vel lacus eget, vestibulum gravida nulla. Nam posuere nisi vel lorem volutpat, non hendrerit dolor sollicitudin. Quisque porttitor aliquet convallis. Cras elementum ac arcu in posuere. Duis in elit in dui ultricies venenatis eget non urna. Vestibulum scelerisque lacinia finibus. Quisque tristique consequat quam, eu interdum dolor aliquam a. Ut quis ante mollis, rutrum ante nec, pharetra nisl. Nulla quis porttitor sapien. Aenean tincidunt mauris quis metus consectetur vestibulum. Nulla gravida finibus pretium. Fusce eleifend vehicula risus, sit amet dapibus lectus fringilla eget.
+
+Aliquam tristique sapien eu tempor sollicitudin. In laoreet magna ut lorem tincidunt laoreet. Curabitur blandit efficitur quam ut elementum. Nam varius sodales velit eget varius. Praesent iaculis gravida mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque velit leo, cursus quis turpis quis, consequat eleifend ipsum. Suspendisse in est purus. Sed et faucibus enim.
+
+Praesent a pretium elit. Nunc auctor ex sed augue vestibulum ultricies. Nullam commodo tortor urna, ac convallis velit congue vitae. Duis vel orci erat. Phasellus nec commodo velit, ac posuere dui. Vivamus pellentesque, elit non congue aliquet, mi dolor vestibulum nisi, in vestibulum eros diam id magna. Quisque in venenatis leo. Mauris hendrerit condimentum nibh at fermentum.
+
+Nunc rutrum aliquet feugiat. Nulla facilisi. Proin molestie, justo et finibus dignissim, tellus tellus lacinia tellus, nec posuere nulla felis in quam. Cras ex ex, molestie non mi dictum, vestibulum convallis metus. Suspendisse potenti. Pellentesque magna justo, interdum vitae auctor nec, cursus scelerisque arcu. Mauris egestas vulputate tristique. Integer et nibh arcu. Aliquam fermentum ipsum sit amet rhoncus ornare. Curabitur a interdum leo. Maecenas sed risus nisi. In mauris mauris, porta nec vulputate ut, tincidunt sed felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate dignissim ex, ac mattis neque vehicula id. Vestibulum volutpat sed nisi in congue. Duis tempus ex magna, vitae eleifend nisi ornare sed.
+
+Proin elementum eget arcu id rutrum. Sed nec odio sit amet ipsum condimentum vulputate. Vestibulum magna ex, congue id mollis nec, gravida aliquet ante. Integer non ligula felis. Proin tincidunt euismod enim in posuere. Pellentesque et augue nec libero mollis tempor eu in nibh. Nunc sodales, orci sit amet tincidunt tincidunt, purus lorem convallis massa, a ullamcorper nibh neque sit amet ipsum. Etiam in purus purus. Donec et tempus diam, non tempor nisl. Vestibulum auctor finibus laoreet.</string>
+    <string name="list_song">List song</string>
+    <string name="loading">Loading</string>
+    <string name="search">Search</string>
+    <string name="search_result">Search result</string>
+    <string name="now_playing">Now playing</string>
+</resources>

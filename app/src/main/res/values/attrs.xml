@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeViewPager">
+        <attr name="swipeEnable" format="reference|boolean" />
+    </declare-styleable>
+</resources>

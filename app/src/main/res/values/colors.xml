@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#79d8df</color>
+    <color name="colorPrimaryDark">#70e7eb</color>
+    <color name="colorAccent">#70e7eb</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="red">#E53935</color>
+    <color name="black_opacity">#71000000</color>
+
+
+    <color name="tab_1">#79BC32</color>
+    <color name="tab_2">#3DB4F8</color>
+    <color name="tab_3">#F89900</color>
+    <color name="tab_4">#EB8487</color>
+</resources>
