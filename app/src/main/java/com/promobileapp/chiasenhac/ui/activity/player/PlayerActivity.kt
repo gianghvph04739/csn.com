@@ -47,6 +47,7 @@ class PlayerActivity : BaseActivity(), PareSongListener {
     }
 
     override fun init() {
+        intent.setExtrasClassLoader(Song::class.java.getClassLoader())
         val song: Song = intent.getParcelableExtra("song")
         presenterPare = PareSongPresenter(this, this)
         presenterPare.getListQualitySong(song)
