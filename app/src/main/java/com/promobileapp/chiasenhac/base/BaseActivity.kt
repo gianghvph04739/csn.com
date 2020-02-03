@@ -2,13 +2,16 @@ package com.promobileapp.chiasenhac.base
 
 import android.app.Activity
 import android.content.Context
-import android.graphics.Color
+import android.content.Intent
+import android.content.ServiceConnection
 import android.os.Build
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.promobileapp.chiasenhac.service.MusicPlayerService
+import com.promobileapp.chiasenhac.utils.AppConstants
 
 open abstract class BaseActivity : AppCompatActivity() {
     fun showMessage(message: String) {
@@ -44,6 +47,33 @@ open abstract class BaseActivity : AppCompatActivity() {
                     flags and View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR.inv()
                 }
                 win.decorView.systemUiVisibility = flags
+            }
+        }
+    }
+
+    fun startService(action: String) {
+        var intent = Intent(this, MusicPlayerService::class.java)
+        intent.setAction(action)
+        startService(intent)
+    }
+
+    fun playMusic(url: String) {
+        var intent = Intent(this, MusicPlayerService::class.java)
+        intent.setAction(AppConstants.ACTION_SET_DATASOURCE)
+        intent.putExtra(AppConstants.ACTION_SET_DATASOURCE, url)
+        startService(intent)
+    }
+
+    open fun bindService(connection: ServiceConnection) {
+        val intent = Intent(this, MusicPlayerService::class.java)
+        bindService(intent, connection, Context.BIND_AUTO_CREATE)
+    }
+
+    open fun unbindServicePlayMusic(connection: ServiceConnection, mBound: Boolean) {
+        if (mBound) {
+            try {
+                unbindService(connection)
+            } catch (ex: Exception) {
             }
         }
     }

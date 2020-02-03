@@ -6,6 +6,13 @@ import com.promobileapp.chiasenhac.model.Category
 import java.util.*
 
 object AppConstants {
+    val ACTION_NEXT = "com.promobileapp.action_next"
+    val ACTION_PRIVE = "com.promobileapp.action_prive"
+    val ACTION_STOP = "com.promobileapp.action_stop"
+    val ACTION_TOGGLE_PLAY = "com.promobileapp.action_togle_play"
+    val ACTION_MAIN_OPEN = "com.promobileapp.action_open_from_main"
+    val ACTION_SET_DATASOURCE = "com.promobileapp.action_set_datasource"
+    val OPEN_FROM_NOTIFICATION = "com.promobileapp.action_open_from_notification"
     val ALBUM_INTENT = "album_intent"
     val CATEGORY_INTENT = "category_intent"
     val SEARCH_BASE_URL = "https://chiasenhac.vn/tim-kiem?q="

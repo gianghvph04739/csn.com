@@ -3,14 +3,16 @@ package com.promobileapp.chiasenhac.model
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Quality(var name: String?, var url: String?, var size: String?) : Parcelable {
+data class Quality(var name: String?, var url: String?, var quality: String?, var size: String?) : Parcelable {
     constructor(parcel: Parcel) : this(
-            parcel.readString(), parcel.readString(), parcel.readString()
-    )
+            parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString()
+    ) {
+    }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
         parcel.writeString(url)
+        parcel.writeString(quality)
         parcel.writeString(size)
     }
 
@@ -27,5 +29,4 @@ data class Quality(var name: String?, var url: String?, var size: String?) : Par
             return arrayOfNulls(size)
         }
     }
-
 }

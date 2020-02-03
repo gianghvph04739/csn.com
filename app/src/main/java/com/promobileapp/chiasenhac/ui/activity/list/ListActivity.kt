@@ -1,7 +1,10 @@
 package com.promobileapp.chiasenhac.ui.activity.list
 
+import android.content.ComponentName
 import android.content.Intent
+import android.content.ServiceConnection
 import android.os.Bundle
+import android.os.IBinder
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
@@ -11,6 +14,7 @@ import com.promobileapp.chiasenhac.base.BaseActivity
 import com.promobileapp.chiasenhac.model.Album
 import com.promobileapp.chiasenhac.model.Category
 import com.promobileapp.chiasenhac.model.Song
+import com.promobileapp.chiasenhac.service.MusicPlayerService
 import com.promobileapp.chiasenhac.ui.activity.list.presenter.ListListener
 import com.promobileapp.chiasenhac.ui.activity.list.presenter.ListPresenter
 import com.promobileapp.chiasenhac.ui.activity.player.PlayerActivity
@@ -24,11 +28,35 @@ class ListActivity : BaseActivity(), ListListener {
     var category: Category? = null
     lateinit var adapterSong: SongAdapter
     lateinit var listSong: ArrayList<Song>
+    var mBound = false
+    var musicPlayerService: MusicPlayerService? = null
+    private val connection: ServiceConnection = object : ServiceConnection {
+        override fun onServiceConnected(className: ComponentName, service: IBinder) {
+            val binder: MusicPlayerService.MusicServiceBinder = service as MusicPlayerService.MusicServiceBinder
+            musicPlayerService = binder.getService()
+            mBound = true
+        }
+
+        override fun onServiceDisconnected(arg0: ComponentName) {
+            mBound = false
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
         init()
         loadingView.visibility = View.VISIBLE
+    }
+
+    override fun onResume() {
+        super.onResume()
+        bindService(connection)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        unbindServicePlayMusic(connection, mBound)
     }
 
     override fun init() {
